@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Accessories</title>
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="mobile-accessories.css" />
+  </head>
+  <body>
+    <div class="mobile-accessories-page">
+      <!-- Header -->
+      <header class="header">
+        <div class="left">
+          <button class="btn-icon back-btn" aria-label="back">
+            <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </button>
+          <h1>Mobile Accessories Page</h1>
+        </div>
+        <div class="top-actions">
+          <button class="btn-icon" aria-label="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="btn-icon" aria-label="user">
+            <i class="fa-regular fa-user"></i>
+          </button>
+          <button class="btn-icon" aria-label="more">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Search -->
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- Chips -->
+      <nav class="category-chips">
+        <button class="chip active">Tablets</button>
+        <button class="chip">Phones</button>
+        <button class="chip">Ipads</button>
+        <button class="chip">Ipods</button>
+      </nav>
+
+      <!-- filter+grid -->
+      <div class="filter-grid">
+        <div class="filter">
+          <span>Sort by:</span>
+          <select>
+            <option value="popularity">Popularity</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+            <option value="newest">Newest Arrivals</option>
+          </select>
+          <button class="filter-btn">
+            <i class="fa-solid fa-filter"></i>
+            <span>Filter</span>
+          </button>
+        </div>
+        <div class="view-toggle">
+          <button class="btn-icon" aria-label="list">
+            <i class="fa-solid fa-list"></i>
+          </button>
+          <button class="btn-icon" aria-label="grid">
+            <i class="fa-solid fa-grip"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Applied filters -->
+      <div>
+        <button><span>Huawei</span><i class="fa-solid fa-xmark"></i></button>
+        <button><span>Apple</span><i class="fa-solid fa-xmark"></i></button>
+        <button><span>64GB</span><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <!-- items list -->
+      <main class="list">
+        <div>
+          <img src="P-Images/image 19.png" alt="Item" />
+          <div class="item-info">
+            <p class="name">Regular Mug</p>
+            <p class="price">$599.00</p>
+            <div class="Rating">
+              <div class="stars-orders">
+                <div class="stars">★★★★☆ 7.5</div>
+                <span class="orders">120 orders</span>
+              </div>
+              <span class="shipping">Free shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="P-Images/image 20.png" alt="Item" />
+          <div class="item-info">
+            <p class="name">Smart Headphones</p>
+            <p class="price">$599.00</p>
+            <div class="Rating">
+              <div class="stars-orders">
+                <div class="stars">★★★★☆ 7.5</div>
+                <span class="orders">120 orders</span>
+              </div>
+              <span class="shipping">Free shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="P-Images/image 21.png" alt="Item" />
+          <div class="item-info">
+            <p class="name">Laptop</p>
+            <p class="price">$599.00</p>
+            <div class="Rating">
+              <div class="stars-orders">
+                <div class="stars">★★★★☆ 7.5</div>
+                <span class="orders">120 orders</span>
+              </div>
+              <span class="shipping">Free shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="P-Images/image 2.png" alt="Item" />
+          <div class="item-info">
+            <p class="name">Smart Watches</p>
+            <p class="price">$599.00</p>
+            <div class="Rating">
+              <div class="stars-orders">
+                <div class="stars">★★★★☆ 7.5</div>
+                <span class="orders">120 orders</span>
+              </div>
+              <span class="shipping">Free shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommendation Section -->
+        <h3 class="section-title">You may also like</h3>
+        <div class="grid grid-3">
+          <article class="product">
+            <img src="P-Images/image 4.png" alt="Smart watches" />
+            <p class="price">$299.00</p>
+            <p class="product-name">Smart watches</p>
+          </article>
+          <article class="product">
+            <img src="P-Images/image 5.png" alt="Smart earphones" />
+            <p class="price">$199.00</p>
+            <p class="product-name">Smart earphones</p>
+          </article>
+          <article class="product">
+            <img src="P-Images/image 7.png" alt="Smart chair" />
+            <p class="price">$399.00</p>
+            <p class="product-name">Smart chair</p>
+          </article>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

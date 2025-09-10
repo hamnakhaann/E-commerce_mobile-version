@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile Main</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <button class="btn-icon" aria-label="menu" id="openSidebar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="brand">
+          <img src="P-Images/image_117[1].png" alt="Logo" class="brand-logo" />
+          <span class="brand-name">Brand</span>
+        </div>
+        <div class="top-actions">
+          <button class="btn-icon" aria-label="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="btn-icon" aria-label="user">
+            <i class="fa-regular fa-user"></i>
+          </button>
+          <button class="btn-icon" aria-label="more">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Sidebar Overlay -->
+      <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+      <!-- Sidebar -->
+      <aside id="mobileSidebar" class="sidebar">
+        <div class="sidebar-header">
+          <div class="profile">
+            <img
+              src="https://www.pngmart.com/files/23/Profile-PNG-Photo.png"
+              alt="Profile"
+            />
+            <a href="#">Sign in</a> | <a href="#">Register</a>
+          </div>
+          <button class="close-btn" id="closeSidebar">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="menu">
+          <li><i class="fa-solid fa-house"></i> Home</li>
+          <li><i class="fa-solid fa-list"></i> Categories</li>
+          <li><i class="fa-regular fa-heart"></i> Favorites</li>
+          <li><i class="fa-regular fa-clipboard"></i> My orders</li>
+          <div class="divider"></div>
+          <li><i class="fa-solid fa-globe"></i> English | USD</li>
+          <li><i class="fa-regular fa-envelope"></i> Contact us</li>
+          <li><i class="fa-regular fa-circle-question"></i> About</li>
+        </ul>
+
+        <ul class="bottom-links">
+          <div class="divider"></div>
+          <li>User agreement</li>
+          <li>Partnership</li>
+          <li>Privacy policy</li>
+        </ul>
+      </aside>
+
+      <!-- Search -->
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- Category Chips -->
+      <nav class="category-chips">
+        <button class="chip active">All category</button>
+        <button class="chip">Gadgets</button>
+        <button class="chip">Clothes</button>
+        <button class="chip">Accessories</button>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero">
+        <img
+          src="P-Images/image 1.png"
+          alt="Latest electronics"
+          class="hero-img"
+        />
+        <div class="hero-text">
+          <h4 class="sub-title">Latest trending</h4>
+          <h3 class="main-title">Electronic items</h3>
+          <button class="btn-light">Learn more</button>
+        </div>
+      </section>
+
+      <main class="content">
+        <!-- Deals -->
+        <section class="card">
+          <div class="section-header">
+            <div>
+              <h4>Deals and offers</h4>
+              <p class="text-muted">Electronic equipment</p>
+            </div>
+            <div class="deal-timer" id="dealTimer">
+              <div class="time-box">
+                <span id="days">04</span><small>Days</small>
+              </div>
+              <div class="time-box">
+                <span id="hours">13</span><small>Hour</small>
+              </div>
+              <div class="time-box">
+                <span id="minutes">34</span><small>Min</small>
+              </div>
+              <div class="time-box">
+                <span id="seconds">56</span><small>Sec</small>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-3">
+            <article class="product">
+              <img src="P-Images/image 2.png" alt="Smart watches" />
+              <p class="product-name">Smart watches</p>
+              <span class="badge red">-25%</span>
+            </article>
+            <article class="product">
+              <img src="P-Images/image 18.png" alt="Smart earphones" />
+              <p class="product-name">Smart earphones</p>
+              <span class="badge red">-25%</span>
+            </article>
+            <article class="product">
+              <img src="P-Images/image 3.png" alt="Smart watches" />
+              <p class="product-name">Smart watches</p>
+              <span class="badge red">-25%</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- Home -->
+        <section class="card">
+          <div class="section-header">
+            <h4>Home and outdoor</h4>
+          </div>
+          <div class="grid grid-3">
+            <article class="product">
+              <img src="P-Images/image 13.png" alt="Item" />
+              <p class="product-name">Smart watches</p>
+              <p class="text-muted small">From USD 19</p>
+            </article>
+            <article class="product">
+              <img src="P-Images/image 14.png" alt="Item" />
+              <p class="product-name">Smart watches</p>
+              <p class="text-muted small">From USD 19</p>
+            </article>
+            <article class="product">
+              <img src="P-Images/image 8.png" alt="Item" />
+              <p class="product-name">Smart watches</p>
+              <p class="text-muted small">From USD 19</p>
+            </article>
+          </div>
+          <button class="btn-link">
+            Source now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </section>
+
+        <!-- Consumer electronics -->
+        <section class="card">
+          <div class="section-header">
+            <h4>Consumer electronics</h4>
+          </div>
+          <div class="grid grid-3">
+            <article class="product">
+              <img src="P-Images/image 6.png" alt="Item" />
+              <p class="product-name">Smart watches</p>
+              <p class="text-muted small">From USD 19</p>
+            </article>
+            <article class="product">
+              <img src="P-Images/image 22.png" alt="Item" />
+              <p class="product-name">Smart watches</p>
+              <p class="text-muted small">From USD 19</p>
+            </article>
+            <article class="product">
+              <img src="P-Images/image 23.png" alt="Item" />
+              <p class="product-name">Smart watches</p>
+              <p class="text-muted small">From USD 19</p>
+            </article>
+          </div>
+          <a href="mobile-accessories.html">
+          <button class="btn-link">
+            Source now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          </a>
+        </section>
+
+        <!-- Inquiry -->
+        <section class="card inquiry">
+          <div class="inquiry-overlay">
+            <h4>An easy way to send requests to all suppliers</h4>
+            <button class="btn-primary">Send Inquiry</button>
+          </div>
+        </section>
+
+        <!-- Recommended -->
+        <section class="card">
+          <div class="section-header">
+            <h4>Recommended items</h4>
+          </div>
+          <div class="grid grid-2">
+           
+              <article class="recommend">
+                <img src="P-Images/image 103.png" alt="Item" />
+                <div class="recommend-info">
+                   <a href="web-detail.html">
+                  <button class="price">$10.30</button>
+                  </a>
+                  <p class="text-muted small">T-shirts with multiple colors</p>
+                </div>
+              </article>
+            
+            <article class="recommend">
+              <img src="P-Images/image 104.png" alt="Item" />
+              <div class="recommend-info">
+                <p class="price">$10.30</p>
+                <p class="text-muted small">Sports, high-quality jacket</p>
+              </div>
+            </article>
+            <article class="recommend">
+              <img src="P-Images/image 106.png" alt="Item" />
+              <div class="recommend-info">
+                <p class="price">$10.30</p>
+                <p class="text-muted small">Leather wallet</p>
+              </div>
+            </article>
+            <article class="recommend">
+              <img src="P-Images/image 10.png" alt="Item" />
+              <div class="recommend-info">
+                <p class="price">$10.30</p>
+                <p class="text-muted small">Clay pot</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
